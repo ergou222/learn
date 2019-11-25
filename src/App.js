@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+// 状态管理
+import {Provider} from 'react-redux'
+import store from '@/store'
+
+// 路由
+import { HashRouter } from 'react-router-dom'
+
+
+
+
+// import Test from '@/components/Test.js'
+// import Song from '@/components/Song.js'
+
+import {JdLayout} from '@/components'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <HashRouter>
+    <Provider store={store}>
+    <div className="app">
+     {/* <Test></Test> */}
+     {/* <Song></Song> */}
+
+     {/* 底部样式 */}
+    <JdLayout></JdLayout>
+    
     </div>
+    </Provider>
+  </HashRouter>
+    
   );
 }
 

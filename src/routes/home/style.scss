@@ -1,0 +1,22 @@
+.home_box{
+    width: 9.9375rem;
+    height: 16.6875rem;
+    float: left;
+    margin-left: 1.05rem;
+    font-size: .8125rem;
+    box-sizing: border-box;
+    img{
+        width: 11rem;
+        height: 11rem;
+    }
+    .about{
+         margin-top: 5px;
+         .current_price{
+         color: red;        
+         } 
+      .desc{
+             color: #232326;
+           } 
+    }
+   
+}
